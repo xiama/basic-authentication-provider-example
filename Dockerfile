@@ -4,9 +4,9 @@
 #
 # The standard name for this image is openshift3/basicauthurl
 
-FROM registry.access.redhat.com/library/rhel
+FROM basicauthurl
 
-RUN yum install -y --enablerepo=rhel-7-server-rpms  tar httpd mod_ssl php   mod_auth_kerb mod_auth_mellon mod_authnz_pam   && yum clean all
+#RUN yum install -y --enablerepo=rhel-7-server-rpms  tar httpd mod_ssl php   mod_auth_kerb mod_auth_mellon mod_authnz_pam   && yum clean all
 # replace the line above to pull in any needed modules, e.g. for LDAP:
 #RUN yum install -y --enablerepo=rhel-7-server-rpms --enablerepo=rhel-7-server-optional-rpms   mod_ldap   tar httpd mod_ssl php   && yum clean all
 # minimal install for htpasswd auth
