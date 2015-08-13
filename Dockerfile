@@ -4,7 +4,7 @@
 #
 # The standard name for this image is openshift3/basicauthurl
 
-FROM basicauthurl
+FROM docker.io//basicauthurl
 
 #RUN yum install -y --enablerepo=rhel-7-server-rpms  tar httpd mod_ssl php   mod_auth_kerb mod_auth_mellon mod_authnz_pam   && yum clean all
 # replace the line above to pull in any needed modules, e.g. for LDAP:
